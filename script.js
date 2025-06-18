@@ -10,7 +10,7 @@ document.querySelectorAll(".buy-btn").forEach(button => {
     await fetch("/api/enroll", {
       method: "POST",
       headers: { "Content-Type": "application/json" },
-      body: JSON.stringify({ userId, platform: "Evaltree" }),
+      body: JSON.stringify({ userId, platform: "Alatree" }),
     }).then(res => console.log("Enrolled:", res.status));
 
     // 2. Simulate collectible purchase
